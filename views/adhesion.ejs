@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ASM | Adhesion</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/library/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+    
+    <!-- 
+    
+    Enable one styles which the you want
+    
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/hockey.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/basketball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/football.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/baseball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/dota.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/csgo.min.css" rel="stylesheet" type="text/css" />
+    
+    All libraries included in this css, concating rules in /grunt/cssmin.js
+    Use grunt default task for creating this files
+    
+    -->
+</head>
+
+<body>
+
+    <%- include("./partials/preloader.ejs") %>
+
+    <!--MAIN MENU AND NAVBAR WRAP BEGIN-->
+    <%- include("./partials/header-navbar.ejs") %>
+        <!--MAIN MENU WRAP END-->
+
+
+    <!--BREADCRUMBS BEGIN-->
+<section class="image-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info">
+                    <div class="wrap">
+                        
+                        <h1>Adhesion au club</h1>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+</section>
+<!--BREADCRUMBS END-->
+
+    <!--CONTACT WRAP BEGIN-->
+<section class="contacts-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h4>Devenir adhérent</h4>	
+                <p>Veuillez remplir le formulaire pour crée votre compte et Devenir adherent. </p>
+                <!-- <div class="contact-office-img">
+                    <img class="img-responsive" src="images/soccer/contact-office-img.jpg" alt="contact-office-img">	
+                </div> -->
+                <ul class="contact-list">
+                    <li><i class="fa fa-flag" aria-hidden="true"></i><span>En créant ce compte vous accepter les conditions.</span></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
+                    <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                </ul>
+                <ul class="contact-bar">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="google"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    <li class="pinterest"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <h4>Formulaire adhérent</h4>	
+                <div class="leave-comment-wrap">
+                    <form autocomplete="off" id="signup-form">								
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Nom et prénom </span>
+                                        <input type="text" name="nomPrenom" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Date de naissance</span>
+                                        <input class="form-control" type="date" name="dateNaissance" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Sexe</span>
+                                        <select class="form-control" name="sexe" id="">
+                                            <option value="Libreville">Homme</option>
+                                            <option value="Franceville">Femme</option>
+                                        </select>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Ville de résidence</span>
+                                        <select class="form-control" name="ville" id="ville">
+                                            <option value="Libreville">Libreville</option>
+                                            <option value="Franceville">Franceville</option>
+                                            <option value="Bitam">Bitam</option>
+                                            <option value="Bitam">Oyem</option>
+                                            <option value="Bitam">Mounana</option>
+                                        </select>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Numéro de téléphone <i></i></span>
+                                        <input class="form-control" type="tel" name="telephone" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>Email <i>*</i></span>
+                                        <input class="form-control" type="email" name="email" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <label>
+                                        <span><i>Mot de passe</i></span>
+                                        <input class="form-control" type="password" name="password1" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <label>
+                                        <span><i>Confirmer mot de passe</i></span>
+                                        <input class="form-control" type="password" name="password2" required>
+                                    </label>
+                                </div>	
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <label>
+                                        <span>A propos de vous</span>
+                                        <textarea name="bio" required></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="comment-submit">Crée le compte</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts-map">
+        <img class="img-responsive" src="images/soccer/contacts-map.jpg" alt="contacts-map">
+    </div>
+</section>
+<!--CONTACT WRAP END-->
+
+    <!--FOOTER BEGIN-->
+    <!--MAIN MENU AND NAVBAR WRAP BEGIN-->
+    <%- include("./partials/footer.ejs") %>
+        <!--MAIN MENU WRAP END-->
+<!--FOOTER END-->
+
+
+<!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+<script type="text/javascript" src="js/library/jquery-ui.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.js"></script>
+<script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.js"></script>
+<script type="text/javascript" src="js/library/progressbar.js"></script>
+<script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+<script type="text/javascript" src="js/library/chartist.js"></script>
+<script type="text/javascript" src="js/library/Chart.js"></script>
+<script type="text/javascript" src="js/library/fancySelect.js"></script>
+<script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+
+<script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+<script type="text/javascript" src="js/matches-slider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+<script type="text/javascript" src="js/news-line.js"></script>
+<script type="text/javascript" src="js/match_galery.js"></script>
+<script type="text/javascript" src="js/main-club-gallery.js"></script>
+<script type="text/javascript" src="js/product-slider.js"></script>
+<script type="text/javascript" src="js/circle-bar.js"></script>
+<script type="text/javascript" src="js/standings.js"></script>
+<script type="text/javascript" src="js/shop-price-filter.js"></script>
+<script type="text/javascript" src="js/timeseries.js"></script>
+<script type="text/javascript" src="js/radar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/diagram.js"></script>
+<script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+<script type="text/javascript" src="js/label-placement-diagram.js"></script>
+<script type="text/javascript" src="js/donut-chart.js"></script>
+<script type="text/javascript" src="js/animate-donut.js"></script>
+<script type="text/javascript" src="js/advanced-smil.js"></script>
+<script type="text/javascript" src="js/svg-path.js"></script>
+<script type="text/javascript" src="js/pick-circle.js"></script>
+<script type="text/javascript" src="js/horizontal-bar.js"></script>
+<script type="text/javascript" src="js/gauge-chart.js"></script>
+<script type="text/javascript" src="js/stacked-bar.js"></script>
+
+<script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+<script type="text/javascript" src="js/treshold.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
+<script type="text/javascript" src="js/anchor.js"></script>
+<script type="text/javascript" src="js/landing_carousel.js"></script>
+<script type="text/javascript" src="js/landing_sport_standings.js"></script>
+<script type="text/javascript" src="js/twitterslider.js"></script>
+<script type="text/javascript" src="js/champions.js"></script>
+<script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/video_slider.js"></script>
+<script type="text/javascript" src="js/footer_slides.js"></script>
+<script type="text/javascript" src="js/player_test.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+	<!--DEMO SWITCHER BEGIN-->
+<a class="demo-switcher-small-button">
+    <i class="fa fa-cog fa-spin fa-fw margin-bottom"></i>
+</a>
+<div class="demo-switcher"> 
+    <div class="switcher-header">
+        <p><i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>demo switcher</p>
+    </div>
+    <div class="switcher-menu">
+        <div class="special-list">
+            <h3>New demos</h3>
+            <ul>
+                <li><a href="sport-championship-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i>sport championship</a></li>
+                <li><a href="sport-team-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i>sport team</a></li>
+                <li class="small-letter"><a href="esport-championship-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i><p>eSport championship</p></a></li>
+                <li class="small-letter"><a href="esport-team-landing.html" data-scheme="csgo"><i class="fa fa-star" aria-hidden="true"></i><p>eSport team</p></a></li>
+            </ul>
+        </div>
+        <ul class="light-list demo-swith">
+            <li><a href="indexa369.html?scheme=soccer" data-scheme="soccer"><span class="soccer"></span>Soccer</a></li>
+            <li><a href="index70c2.html?scheme=amfootball" data-scheme="amfootball"><span class="football"></span>Football</a></li>
+            <li><a href="index075a.html?scheme=hockey" data-scheme="hockey"><span class="hockey"></span>Hockey</a></li>
+            <li><a href="indexc4b0.html?scheme=baseball" data-scheme="baseball"><span class="baseball"></span>Baseball</a></li>
+            <li><a href="index9439.html?scheme=basketball" data-scheme="basketball"><span class="basketball"></span>Basketball</a></li>
+        </ul>
+        <ul class="dark-list demo-swith">
+            <li><a href="index8bc9.html?scheme=csgo" data-scheme="csgo"><span class="csgo"></span>CS:GO</a></li>
+            <li><a href="indexd51a.html?scheme=dota" data-scheme="dota"><span class="dota"></span>DOTA</a></li>
+        </ul>
+    </div>
+</div>
+<!--DEMO SWITCHER END-->
+
+<script type="text/javascript" src="dev-assets/demo-switcher.js"></script>
+<script type="module" src="web-front-api/adhesion.js"></script>
+</body>
+
+
+</html>
